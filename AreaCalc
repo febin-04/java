@@ -1,0 +1,26 @@
+
+ class Calc {
+double area(double r) {
+	return 3.14*r*r;
+}double area(double len,double wid){
+	return len*wid;
+}float area(float base,float height){
+	return 1/2*base*height;
+}int area(int side){
+	return side*side;
+}
+}public class AreaCalculator{
+ public static void main(String[]args) {
+	Calc calc = new Calc();
+	double area1=calc.area(5.67);
+	System.out.println("The area is "+area1);
+	double area2=calc.area(4.56,5.78);
+	System.out.println("The area is "+area2);
+	float area3= calc.area(3.43f,2.6f);
+	System.out.println("The area is "+area3);
+	int area4=calc.area(4);
+	System.out.println("The area is "+area4);
+	
+	
+ }
+}
